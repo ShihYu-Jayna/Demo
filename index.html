@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" >
+    <title>CSS Demo</title>
+</head>
+<body>
+    <table align="center" cellpadding="10" border='1' width="40%" style="table-layout:fixed;line-height:20px;">
+        <tr align="center">
+          <th width="10%">類別</th>
+          <th>有css</th>
+          <th>沒有css</th></tr>
+        <tr>
+          <td align="center">font</td>
+          <td><h3>測試文字_TestTag</h3><p class="fontDemo">測試文字_個別css</p><div class="listDemo">測試文字_段落</div></td>
+          <td><p>測試文字</p></td>
+        </tr>
+        <tr align="center">
+          <td align="center">link</td>
+          <td><a href="https://www.google.com.tw/"  target="_blank" class="linkDemo">連結測試</a></td>
+          <td><a href="https://www.google.com.tw/"  target="_blank" >連結測試</a></td>
+        </tr>
+        <tr align="center">
+          <td align="center">button</td>
+          <td><button align="left" class="button" type="button">Home</button></td>
+          <td><button align="left"  type="button">Home</button></td>
+        </tr>
+        <tr>
+          <td align="center">checkbox</td>
+          <td>
+            <label >
+              <input type="checkbox" class="checkboxDemo" name="disease[]" value="0" />
+              <span>無</span>
+            </label>
+            <label>
+              <input type="checkbox" class="checkboxDemo" name="disease[]" value="1" />
+              <span>高血壓</span>
+            </label>
+            <label>
+              <input type="checkbox" class="checkboxDemo" name="disease[]" value="2" />
+              <span>糖尿病</span>
+            </label>
+          </td>
+          <td>
+            <input type="checkbox" name="disease[]" value="0" />無
+            <input type="checkbox" name="disease[]" value="1" />高血壓
+            <input type="checkbox" name="disease[]" value="2" />糖尿病
+          </td>
+        </tr>
+        <tr>
+          <td align="center">radio</td>
+          <td>
+            <input type="radio" class="radioDemo" id="man" name="sex" value="0" /><label for="man"><span></span>男</label>
+            <input type="radio" class="radioDemo" id="female" name="sex" value="1" /><label for="female"><span></span>女</label>
+          </td>
+           <td>
+            <input type="radio" name="sex" value="0" />男
+            <input type="radio" name="sex" value="1" />女
+          </td>
+        </tr>
+        <tr>
+          <td align="center">select</td>
+          <td>
+            關係
+            <select class="selectDemo">
+              <option>父</option>
+              <option>母</option>
+              <option>兄</option>
+              <option>弟</option>
+              <option>姊</option>
+              <option>妹</option>
+            </select>
+          </td>
+           <td>
+             關係
+            <select>
+              <option>父</option>
+              <option>母</option>
+              <option>兄</option>
+              <option>弟</option>
+              <option>姊</option>
+              <option>妹</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">input</td>
+          <td>
+            <label for="name">姓名</label><input type="text" class="inputDemo" id="name" name="name">
+          </td>
+          <td>姓名<input type="text" id="name" name="name"></td>
+        </tr>
+        <tr>
+          <td align="center">ul,li </td>
+          <td>
+            <ul class="ulDemo">
+              <li class="liDemo">手術同側肢體避免提重物或劇烈運動</li>
+              <li class="liDemo">手術傷口勿沾水，需保持乾燥</li>
+              <li class="liDemo">傷口有引流管注意請勿拉扯</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>手術同側肢體避免提重物或劇烈運動</li>
+              <li>手術傷口勿沾水，需保持乾燥</li>
+              <li>傷口有引流管注意請勿拉扯</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">table</td>
+          <td>
+            <table width="90%" align="center" style="table-layout:fixed;line-height:20px;" class="tableDemo">
+              <tr align="center" class="tdDemo"><th>姓名</th><th>性別</th><th>聯絡電話</th></tr>
+              <tr align="center" class="tdDemo"><td>王小名</td><td>男</td><td>0912324567</td></tr>
+              <tr align="center" class="tdDemo"><td>李小花</td><td>女</td><td>0956997842</td></tr>
+            </table>
+          </td>
+          <td>
+             <table border='1' width="90%" align="center" style="table-layout:fixed;line-height:20px;">
+              <tr align="center"><th>姓名</th><th>性別</th><th>聯絡電話</th></tr>
+              <tr align="center"><td>王小名</td><td>男</td><td>0912324567</td></tr><tr align="center"><td>李小花</td><td>女</td><td>0956997842</td></tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center">img</td>
+          <td><img src="./image/Snoopy-1.jpg" alt="Norway" style="width:80%" class="imgDemo"></td>
+          <td><img src="./image/Snoopy-1.jpg"  style="width:80%" ></td>
+        </tr>
+      </table>
+</body>
+</html>
+
+<style>
+    #css {
+      font-family: cursive , Arial;
+      text-align: center;
+      color: #2c3e50;
+      margin-top: 60px;
+    }
+    h3{
+      color: #ff0000;
+      font-family: fantasy;
+    }
+    .fontDemo {
+      color: blue;
+      background: rgb(255, 208, 0);
+      letter-spacing:10px;
+    }
+    .listDemo {
+      color: #008080;
+      text-align:right;
+      font-weight:900;
+      text-decoration:underline; /*底線*/
+    }
+    .button {
+      background-color: #4c63af;
+      border: none; /*邊框*/
+      color: white; 
+      padding: 15px 32px; /*按鈕大小，高，寬*/
+      text-align: center;
+      text-decoration: none;
+      display: inline-block; /*顯示*/
+      font-size: 16px;
+      border-radius: 1rem;
+    }
+    label{padding:5px;}
+    /*
+    圖片用法
+    .checkboxDemo[type=checkbox] {
+      display: none;
+    }
+    .checkboxDemo[type="checkbox"]+span {
+      display: inline-block;
+      line-height: 20px;
+      background: url(https://i.imgur.com/bZM5Itd.png) no-repeat left;
+      user-select: none;
+      padding-left: 20px;
+    }
+    .checkboxDemo[type="checkbox"]:checked+span {
+      background: url(https://i.imgur.com/JWm4WKA.png) no-repeat left;
+    } 
+    */
+    .checkboxDemo[type="checkbox"]:checked {
+      /* box-shadow: 0 0 0 3px hotpink; */
+      background-color: yellow;
+    }
+    .checkboxDemo[type="checkbox"]:checked+span {
+      color: red;
+    }
+    .radioDemo[type="radio"] {
+        display:none;
+    }
+    .radioDemo[type="radio"] + label {
+        color:#080808;
+        font-family:Arial, sans-serif;
+    }
+    .radioDemo[type="radio"] + label span {
+        display:inline-block;
+        width:10px;
+        height:10px;
+        margin:-2px 10px 0 0;
+        vertical-align:middle;
+        background: #d8dadd;
+        box-shadow: 0 0 0 5px #d8dadd;
+        cursor:default;
+        border-radius: 50%;
+    }
+    .radioDemo[type="radio"]:checked + label span {
+        background:rgb(240, 207, 20);
+        box-shadow: 0 0 0 5px #2b5480;
+    }
+    .selectDemo option:checked {
+      background:rgb(135, 238, 207);
+      color: rgb(17, 0, 255);
+      font-weight: 900
+    }
+    .inputDemo[type=text] {
+      padding: 6px 5px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #555; /*input邊框*/
+      outline: none; /*input邊框樣式*/
+    }
+    .inputDemo[type=text]:focus {
+      background-color: lightblue;
+    }
+    .ulDemo{
+      background-color: rgb(252, 215, 217);
+    }
+    .liDemo{
+       list-style: none;
+    }
+    .liDemo{
+        padding: 10px 0 10px 25px;
+        list-style: none;
+        background-image: url("./image/logo.png");
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 20px;
+    }
+    .tableDemo {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    .tdDemo {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    .tdDemo :hover {background-color: rgb(252, 236, 215);}
+    .imgDemo {
+        border-radius: 20%; 
+        -webkit-filter: blur(1px);filter: blur(1px); /*圖片模糊處理*/
+    }
+    .linkDemo:link{
+      color:#000;
+    }
+    .linkDemo:visited{
+      color:#131212;
+      background-color:red; /*已經瀏覽過的連結*/
+    }
+    .linkDemo:hover{
+      text-decoration:underline;
+      background-color:#1939ec;
+      color:rgb(245, 223, 26); /*滑鼠移經連結*/
+    }
+    .linkDemo:active{
+      text-decoration:none;
+      background-color :#52008F;
+      color:#fafafa;
+    }
+</style>
